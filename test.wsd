@@ -1,7 +1,4 @@
 @startuml Hello
 title newpage
-legent
-Q: arijfpaijf
-end legent
 Bob->Alice : Hello!
 @enduml
