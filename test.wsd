@@ -1,4 +1,0 @@
-@startuml Hello
-title newpage
-Bob->Alice : Hello!
-@enduml
