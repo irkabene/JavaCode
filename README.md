@@ -342,7 +342,7 @@
     ```java
     // A) powerOf2
     public static int powerOf2(int n){
-        if (n = 0){
+        if (n == 0){
             // 1o Σκελος
             return 1;
         } else{
@@ -353,7 +353,7 @@
 
     // B) Fibbonacci
     public static int fib(int n){
-        if (n = 0){
+        if (n == 0){
             // 1o Σκελος a
             return 1;
         } else if (n = 1){
@@ -366,7 +366,7 @@
     // C) Παραγωντικό
     public static int factorial(int n){
         // αναδρομή -->  5! = 1*2*3*4*5 = 4! * 5
-        if (n = 0){
+        if (n == 0){
             // 1o Σκελος
             return 1;
         } else{
