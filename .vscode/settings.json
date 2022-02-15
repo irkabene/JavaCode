@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Mathematics_Recursion",
         "Arrays",
-        "Mathematics_Recursion"
+        ""
     ]
 }

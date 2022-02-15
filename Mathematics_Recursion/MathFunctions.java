@@ -58,6 +58,28 @@ public class MathFunctions{
     public static int lcm(int a, int b){
         return a*b / gcd(a,b);
     }
+
+    public static int lcm2(int a,int b){
+        int temp;
+        if(b<a){
+            temp=a;
+            a=b;
+            b=temp;
+        }
+        for(int i=b; i<=(a*b); i++){
+            if (i % a==0 && i % b ==0){
+                return  i;
+            }
+        }
+    }
+
+      
+
+
+
+
+
+
     public static void main(String args[]){
         int n = 21;
         int a = 15;
