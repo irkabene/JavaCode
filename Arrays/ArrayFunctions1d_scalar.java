@@ -9,7 +9,7 @@ public class ArrayFunctions1d_scalar{
         }
         return minimum;
     }
-
+    
     public static int minLocationFrom(int array[], int index){
         int length = array.length;
         int minimum = array[index];
