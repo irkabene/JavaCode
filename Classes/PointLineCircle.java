@@ -27,6 +27,9 @@ class Point{
     public double distanceFrom(Point p){
         return Math.sqrt((p.getX()-this.x)*(p.getX()-this.x) + (p.getY()-this.y)*(p.getY()-this.y));
     }  
+    public String toString(){
+        return "oi sintetagmenes toy simeioy einai" + this.x + ", " + this.y;
+    }
 }
 
 class LS{
@@ -59,6 +62,34 @@ class LS{
         return false;
     }
 
+}
+
+class Circle{
+    private double r;
+    private Point center;
+    
+    public Circle(double r, Point center){
+        this.r = r;
+        this.center = center;
+    }
+    public Point getCenter(){
+        return this.center;
+    }
+    public double getRadius(){
+        return this.r;
+    }
+    public double area(){
+        return Math.PI*this.r*this.r;
+    }
+    public boolean intersectsWith(Circle c){
+        if( Math.abs(this.r - c.getRadius()) <= this.center.distanceFrom(c.getCenter()) && this.center.distanceFrom(c.getCenter()) <= this.r + c.getRadius()){
+            return true;
+        }
+        return false;
+    }
+    public String toString(){
+        return "o kiklos exei kentro" + center.toString() + "kai aktina" + r;
+    }
 }
 
 public class PointLineCircle {
