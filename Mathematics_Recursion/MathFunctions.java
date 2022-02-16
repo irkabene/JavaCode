@@ -71,6 +71,7 @@ public class MathFunctions{
                 return  i;
             }
         }
+        return a*b;
     }
 
       

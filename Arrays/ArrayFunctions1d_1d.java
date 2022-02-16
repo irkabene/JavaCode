@@ -1,4 +1,4 @@
-class Test_1d_1d{
+public class ArrayFunctions1d_1d{
    
    public static int[] clone(int array[]){
       int length = array.length;
