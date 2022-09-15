@@ -1,4 +1,4 @@
-public class askiseis {
+public class diaforesAskiseis {
 
     
     public static int  f(int n) {
@@ -22,6 +22,7 @@ public class askiseis {
         int moria= mo*1000;
         return moria;
     }
+
     public static int exams2(int[] bathmoi, int[] vari){
         int mathimata = bathmoi.length;
         int sum=0;
@@ -48,7 +49,7 @@ public class askiseis {
             array2[i] = new int[i+1] ;
         }
         return array2;
-     }
+    }
 
     // 2014 kanonikh(theme 4)
     public static void rightTriangle(int n){
@@ -88,14 +89,15 @@ public class askiseis {
                     break;
                 }
                 else{
-                   if(j==b.length -1) {
-                        return i;
-                   }
+                    if(j==b.length -1) {
+                            return i;
+                    }
                 }
             }
         }
         return -1;
     }
+    
     //isSubString
     public static int isSubString(String a, String b){
         for(int i=0; i<a.length()-b.length() ; i++){ 

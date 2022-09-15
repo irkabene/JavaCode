@@ -42,6 +42,44 @@ public class ArrayFunctions2d_1d{
     return result;
     }
 
+    public static int[] rowSum(int[][] a){
+        int rowsA = a.length;
+        int[] b;
+        b = new int[rowsA];
+        int sum=0;
+        for(int i=0; i<rowsA ; i++){
+            for(int j=0 ; j< a[i].length ;j++){
+                sum = sum + a[i][j];
+            }
+            b[i] = sum;
+            sum=0;
+        }
+        return b;
+    }
+
+    public static boolean[] largerThanRowCheck(int[][] a, int n){
+        int rowsA = a.length;
+        boolean[] b;
+        b = new boolean[rowsA];
+        int max = Integer.MIN_VALUE;
+        
+        for(int i=0 ; i< rowsA ; i++){
+            for(int j=0; j< a[i].length ; j++){
+                if(a[i][j]>max){
+                    max = a[i][j];
+                }
+            }
+            if(max > n){
+                b[i] = true;
+            }
+            else{
+                b[i] = false;
+            }
+            max = Integer.MIN_VALUE;
+        }
+        return b;      
+    }
+
     public static void main(String[] args){
         // δημιουργουμε εναν 3χ4 πινακα με συγκεκριμενες τιμες (απ τον χρηστη)
         int[][] aa = { {1,2,3,4}, {4,5,6,4}, {7,8,9,4} }; 
