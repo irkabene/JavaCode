@@ -1,36 +1,21 @@
 public class ArrayFunctions2d_1d{
 
-    // 2018(kanoniki)/thema 3
-    public static int[] rowSum (int[][] array){
-        int rows= array.length;
-        int[] result;
-        result = new int[rows];
-        int sum=0;
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<array[i].length; j++){
-                sum= sum + array[i][j];
-            }
-            result[i]=sum;
-            sum=0;
-        }
-    return result;
-    }
 
     // 2017(kanoniki)/thema //
 
     public static int[] intRowMax (int[][] array){
-        int rows= array.length;
+        int rows = array.length;
         int[] result;
         result = new int[rows];
-        int max=Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;
         for(int i=0; i<rows; i++){
             for(int j=0; j<array[i].length; j++){
-                if( array[i][j]>max){
-                    max= array[i][j];
+                if( array[i][j] > max){
+                    max = array[i][j];
                 }
             }
-            result[i]=max;
-            max=Integer.MIN_VALUE;
+            result[i] = max;
+            max = Integer.MIN_VALUE;
         }
     return result;
     }

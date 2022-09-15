@@ -37,7 +37,7 @@ public class ArrayFunctions1d_scalar{
         int athroisma = 0;
         for (int i = 0; i < length; i = i + 2){
             athroisma = athroisma + array[i];  
-            
+ 
         }
         return athroisma;
     } 

@@ -1,4 +1,46 @@
-class Test{
+class StringList{
+    private Cell head;
+    private int noOfElems;
+    
+    public StringList(){
+        this.noOfElems = 0;
+    }
+    public void insertFront(String y){
+        Cell newCell = new Cell();
+        newCell.setData(y);
+        if(noOfElems != 0 ){
+            newCell.setNext(head);
+        }
+        this.head = newCell;
+        this.noOfElems = this.noOfElems + 1;
+    }
+    public int delete(String x){
+        Cell curCell=head;
+        Cell prevCell= null;
+        for(int i=0; i<noOfElems; i++){
+            if(curCell.data == x){
+                prevCell.setNext(curCell.getNext());
+                curCell.setNext(null);
+                curCell=prevCell.getNext();
+            }
+            else{
+                prevCell = curCell;
+                curCell = curCell.getNext();
+            }
+       
+        }
+    }
+    public void print(){
+        Cell curCell=head;
+        Cell prevCell= null;
+        for(int i=0; i<noOfElems; i++){
+            System.out.println(curCell.getData());
+            prevCell = curCell;
+            curCell = curCell.getNext();
+        }
+    }
 
 }
+
+
 
