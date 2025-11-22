@@ -104,8 +104,46 @@ class Square{
         return this.plevra;
     }
     public void setPlevra(double plevra){
-        this.plevra=plevra
+        this.plevra=plevra;
     }
+
+}
+
+//thema 3/ 2022K
+class Triangle{
+    
+    private Point a;
+    private Point b;
+    private Point c;
+
+    public Triangle( Point a, Point b , Point c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    public double perimeter(){
+        return a.distanceFrom(b) + b.distanceFrom(c)+ c.distanceFrom(a);
+    }
+    
+    public void translateX(int t){
+       this.a.setX(a.getX()+t);
+       this.b.setX(b.getX()+t);
+       this.c.setX(c.getX()+t);
+    }
+    public boolean isParallelToX(){
+        if(this.a.getY()== this.b.getY() || this.b.getY()==this.c.getY() || this.c.getY()==this.a.getY()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }   
+    public String toString(){
+        return "to trigono exei gia korifes ta shmeia" + this.a + ", " + this.b + "," + this.c;
+    }
+
+
+
 
 }
 
@@ -129,4 +167,4 @@ public class PointLineCircle {
     }
 
       
-}
+} 

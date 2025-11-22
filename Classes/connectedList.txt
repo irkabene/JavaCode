@@ -3,11 +3,11 @@ class StringList{
     private int noOfElems;
     
     public StringList(){
-        this.noOfElems = 0;
+        this.noOfElems = 0; 
     }
     public void insertFront(String y){
         Cell newCell = new Cell();
-        newCell.setData(y);
+        newCell.setData(y); 
         if(noOfElems != 0 ){
             newCell.setNext(head);
         }

@@ -3,8 +3,8 @@ import java.util.Comparator;
 public class BinarySearch {
 
     public static int binarySearch(Integer[] a, Integer x, Comparator<Integer> c, int left, int right) {
-        if (left > right) {
-            return -1; // Το στοιχείο δεν βρέθηκε
+       if (left > right) {
+           return -1; // Το στοιχείο δεν βρέθηκε
         }
 
         int mid = (right + left) / 2; // Υπολογισμός μέσης θέσης
@@ -22,16 +22,17 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        Integer[] a = {1,3,5,7,9};
-        Integer target = 7;
+        Integer[] a = {1,3,5,7,9,12,16};
+        Integer target = 6;
 
         Comparator<Integer> comparator = Integer::compare; // or o1.compareTo(o2);
 
         int result = binarySearch(a, target, comparator, 0, a.length - 1);
 
         if (result != -1) {
-            System.out.println("To stoixeio einai sti thesi " + result);
-        } else {
+           System.out.println("To stoixeio einai sti thesi " + result);
+        } 
+        else {
             System.out.println("To stoixeio den brethike");
         }
     }
